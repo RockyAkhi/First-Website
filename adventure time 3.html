@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    var email = document.getElementById("mail").value;
+    function myFunction1(x) {
+      x.style.background = "beige";
+    }
+    
+      function validate()
+    {
+      var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+    
+      if (reg.test(email)) {
+        return document.write("email is"+email);
+      }
+      else {
+        alert('Please enter valid email.');
+        return false;
+      }
+
+    }
+  </script>
+
+
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <div class="details">
+    <form action="adventure 3.3.html">
+      <h1 style="left:20px; position: relative; "> Register now</h1>
+      <h3 style="left:10px; position: relative;"> Avail the travello offer right now and get a discount of 50%</h3>
+      <label for="fname" style="left:20px; position: relative; ">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John" style="left:20px; position: relative; "><br>
+      <label for="lname" style="left:20px; position: relative; ">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe" style="left:20px; position: relative; "><br>
+      <br> &nbsp;&nbsp;<label for="cars">Sex</label>
+
+
+
+      <select id="cars" name="cars">
+        <option value="volvo">Male</option>
+        <option value="saab">Female</option>
+      </select>
+      <br><br>
+      &nbsp;&nbsp;Mobile No: <input type="text" onfocus="myFunction1(this)">
+
+
+      <br><br>
+
+      &nbsp;&nbsp;Email: <input type="text" id="mail" >
+      <br><br>
+
+      &nbsp;&nbsp;Coupon: <input type="text" id="f101" onblur="myFunction2()">
+      <script>
+        function myFunction2() {
+          var x = document.getElementById("f101");
+          x.value = x.value.toUpperCase();
+        }
+      </script>
+
+
+
+      <h3>&nbsp;&nbsp;Country:-</h3>
+      &nbsp;&nbsp;<select id="cars" name="cars">
+        <option value="Country1">India</option>
+        <option value="Country2">Other</option>
+      </select>
+
+
+
+
+      <br>
+      <h2> &nbsp;&nbsp;Type of Travelling:-</h2>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      &nbsp;&nbsp;<label for="vehicle2">Travelling</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      &nbsp;&nbsp;<label for="vehicle3"> Adventures</label><br><br>
+
+      <h3> &nbsp;&nbsp;Type of Adventure:-</h3>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      &nbsp;&nbsp;<label for="html">Solo Adventures</label><br>
+
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      &nbsp;&nbsp;<label for="css">Team Adventures</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      &nbsp;&nbsp;<label for="javascript">Wild Adventures</label>
+      <p>-----------</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" onclick="validate()"> validate mail</button> 
+      <a href="file:///home/student/Downloads/adventure%203.3.html"><button type="button" onclick="">Submit</button></a>
+
+    </form>
+    <br><br>
+  </div>
+
+
+  <div class="navbar">
+
+    <a href="https://sahakar03.wixsite.com/packyourbags">Home</a>
+    <a href="https://sahakar03.wixsite.com/packyourbags">Packages</a>
+    <div class="dropdown">
+      <button class="dropbtn">Profile
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https//:www.google.co.in">Profile</a>
+        <a href="#">Bookings</a>
+        <a href="customer service.html">Customer Service</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+
+  <div class="bg-text">Adventure</div>
+
+</body>
+
+</html>

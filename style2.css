@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.details2{
+  
+  float: right;
+  width:400px;
+  height: 400px;
+  right:2%;
+  top:20%;
+  border: #333;
+  border-width: 2px;
+  border-radius: 2%;
+  position: relative;
+  
+  background-color: red;
+  overflow: auto;
+  background-image:url("https://static.toiimg.com/photo/60763742.cms");
+  
+
+}

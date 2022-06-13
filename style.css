@@ -1,0 +1,158 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+overflow: hidden;
+background-color: #333;
+width:500px;
+}
+
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color:red;
+width:auto;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img4 { background-image: url("https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?cs=srgb&dl=pexels-pixabay-210243.jpg&fm=jpg"); }
+.img5 { background-image: url("https://static.euronews.com/articles/stories/05/88/35/74/1000x563_cmsv2_22c6b08c-cb14-5a96-bcdd-a888a24b2f95-5883574.jpg"); }
+.img6 { background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2012/12/30/26949/1f47e98c93659d576fe41127cf321d3e-700.jpg"); }
+.img1 { background-image: url("https://static01.nyt.com/images/2019/02/12/science/07TB-AURORAS1/07TB-AURORAS1-videoSixteenByNineJumbo1600-v2.jpg"); }
+.img2 { background-image: url("https://www.thegef.org/sites/default/files/shutterstock_amazon_leticia_news.jpg"); }
+.img3 { background-image: url("https://www.thoughtco.com/thmb/t8AnhGOqEJEaehpyjAL3yGafxnA=/3439x2579/smart/filters:no_upscale()/GettyImages_482194715-56a1329e5f9b58b7d0bcf666.jpg"); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color:rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+  border: 4px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+.first{
+  text-align: center;
+  width: 100%;
+  background-color:blue;
+  
+  border: 5px;
+}
+form button:hover {
+  background-color:transparent;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.details{
+  
+  float: right;
+  width:400px;
+  height: 500px;
+  right:2%;
+  top:20%;
+  border: 10px#333;
+  border-width: 2px;
+  border-radius: 2%;
+  position: relative;
+  
+  
+  overflow: auto;
+  background-image:url("https://static.toiimg.com/photo/60763742.cms");
+  
+
+}
