@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    var email = document.getElementById("mail").value;
+    function myFunction1(x) {
+      x.style.background = "beige";
+    }
+    
+      function validate()
+    {
+      var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+    
+      if (reg.test(email)) {
+        return document.write("email is"+email);
+      }
+      else {
+        alert('Please enter valid email.');
+        return false;
+      }
+
+    }
+  </script>
+
+
+</head>
+
+<style>
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+overflow: hidden;
+background-color: #333;
+width:500px;
+}
+
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color:red;
+width:auto;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img4 { background-image: url("https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?cs=srgb&dl=pexels-pixabay-210243.jpg&fm=jpg"); }
+.img5 { background-image: url("https://static.euronews.com/articles/stories/05/88/35/74/1000x563_cmsv2_22c6b08c-cb14-5a96-bcdd-a888a24b2f95-5883574.jpg"); }
+.img6 { background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2012/12/30/26949/1f47e98c93659d576fe41127cf321d3e-700.jpg"); }
+.img1 { background-image: url("https://static01.nyt.com/images/2019/02/12/science/07TB-AURORAS1/07TB-AURORAS1-videoSixteenByNineJumbo1600-v2.jpg"); }
+.img2 { background-image: url("https://www.thegef.org/sites/default/files/shutterstock_amazon_leticia_news.jpg"); }
+.img3 { background-image: url("https://www.thoughtco.com/thmb/t8AnhGOqEJEaehpyjAL3yGafxnA=/3439x2579/smart/filters:no_upscale()/GettyImages_482194715-56a1329e5f9b58b7d0bcf666.jpg"); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color:rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+  border: 4px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+.first{
+  text-align: center;
+  width: 100%;
+  background-color:blue;
+  
+  border: 5px;
+}
+form button:hover {
+  background-color:transparent;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.details{
+  
+  float: right;
+  width:400px;
+  height: 500px;
+  right:2%;
+  top:20%;
+  border: 10px#333;
+  border-width: 2px;
+  border-radius: 2%;
+  position: relative;
+  
+  
+  overflow: auto;
+  background-image:url("https://static.toiimg.com/photo/60763742.cms");
+  
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+  <div class="details">
+    <form action="adventure 3.3.html">
+      <h1 style="left:20px; position: relative; "> Register now</h1>
+      <h3 style="left:10px; position: relative;"> Avail the travello offer right now and get a discount of 50%</h3>
+      <label for="fname" style="left:20px; position: relative; ">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John" style="left:20px; position: relative; "><br>
+      <label for="lname" style="left:20px; position: relative; ">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe" style="left:20px; position: relative; "><br>
+      <br> &nbsp;&nbsp;<label for="cars">Sex</label>
+
+
+
+      <select id="cars" name="cars">
+        <option value="volvo">Male</option>
+        <option value="saab">Female</option>
+      </select>
+      <br><br>
+      &nbsp;&nbsp;Mobile No: <input type="text" onfocus="myFunction1(this)">
+
+
+      <br><br>
+
+      &nbsp;&nbsp;Email: <input type="text" id="mail" >
+      <br><br>
+
+      &nbsp;&nbsp;Coupon: <input type="text" id="f101" onblur="myFunction2()">
+      <script>
+        function myFunction2() {
+          var x = document.getElementById("f101");
+          x.value = x.value.toUpperCase();
+        }
+      </script>
+
+
+
+      <h3>&nbsp;&nbsp;Country:-</h3>
+      &nbsp;&nbsp;<select id="cars" name="cars">
+        <option value="Country1">India</option>
+        <option value="Country2">Other</option>
+      </select>
+
+
+
+
+      <br>
+      <h2> &nbsp;&nbsp;Type of Travelling:-</h2>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      &nbsp;&nbsp;<label for="vehicle2">Travelling</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      &nbsp;&nbsp;<label for="vehicle3"> Adventures</label><br><br>
+
+      <h3> &nbsp;&nbsp;Type of Adventure:-</h3>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      &nbsp;&nbsp;<label for="html">Solo Adventures</label><br>
+
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      &nbsp;&nbsp;<label for="css">Team Adventures</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      &nbsp;&nbsp;<label for="javascript">Wild Adventures</label>
+      <p>-----------</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" onclick="validate()"> validate mail</button> 
+      <a href="C:\Users\sahak\Desktop\Django_projects (3)\Django_projects\foject\templates\adventure 3.3.html"><button type="button" onclick="">Submit</button></a>
+
+    </form>
+    <br><br>
+  </div>
+
+
+  <div class="navbar">
+
+    <a href="https://sahakar03.wixsite.com/packyourbags">Home</a>
+    <a href="https://sahakar03.wixsite.com/packyourbags">Packages</a>
+    <div class="dropdown">
+      <button class="dropbtn">Profile
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https//:www.google.co.in">Profile</a>
+        <a href="#">Bookings</a>
+        <a href="customer service.html">Customer Service</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+
+  <div class="bg-text">Adventure</div>
+
+</body>
+
+</html>
